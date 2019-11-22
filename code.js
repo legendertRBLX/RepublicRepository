@@ -18,7 +18,7 @@ const bot = new Discord.Client();
 const snekfetch = require('snekfetch');
 const rbx = require('noblox.js');
 const bloxy = require('bloxy');
-const bloxyClient = new bloxy.Client({
+const bloxyClient = new bloxy ({
   cookie: `${rblxCookie}`
 })
 bloxyClient.login().then(function() {
