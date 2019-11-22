@@ -3,8 +3,8 @@ const prefix = "r!"
 const groupID = 3788883;
 const bot_token = process.env.botToken;
 const rblxCookie = process.env.rblxCookie;
-const officerRoleE = "| C2 | Battalion Commander" or "Supreme Chancellor";
-const welcomeMessage = "Welcome to the Glactic Republic!";
+const officerRoleE = "Republic HR";
+const welcomeMessage = "Welcome to the Galactic Republic!";
 const maxXP = 10;
 const xpAuditLogChannelID = "646756147088588841";
 const mainChatChannelID = "646756235739267073";
@@ -18,7 +18,7 @@ const bot = new Discord.Client();
 const snekfetch = require('snekfetch');
 const rbx = require('noblox.js');
 const bloxy = require('bloxy');
-const bloxyClient = new bloxy({
+const bloxyClient = new bloxy.Client({
   cookie: `${rblxCookie}`
 })
 bloxyClient.login().then(function() {
