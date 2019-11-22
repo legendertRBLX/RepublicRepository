@@ -1,3 +1,6 @@
+npm cache verify
+npm install
+npm start
 {
   "name": "clanlabsv2-opensourced",
   "version": "1.0.0",
