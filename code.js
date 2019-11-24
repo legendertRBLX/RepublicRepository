@@ -5,11 +5,11 @@ const bot_token = process.env.botToken;
 const rblxCookie = process.env.rblxCookie;
 const officerRoleE = "Republic HR";
 const welcomeMessage = "Welcome to the Galactic Republic!";
-const maxXP = 10;
+const maxXP = 110;
 const xpAuditLogChannelID = "646756147088588841";
 const mainChatChannelID = "646756235739267073";
 const fireBaseURL = process.env.fireBaseURL;
-const xpName = "valor";
+const xpName = "Valor";
 /* SETTINGS END */
 
 /* PACKAGES START */
@@ -541,7 +541,7 @@ bot.on('message', async message => {
       }
       var remainingErrorNumber = Number(requiredXP-Number(currentXP))
       if ((remainingErrorNumber < 0) || (remainingErrorNumber === 0)){
-        remainingErrorNumber = "Due 4 Promotion";
+        remainingErrorNumber = "Due for Promotion";
       }
 
       var remainingError = `**${remainingErrorNumber}** ${xpName} remaining for **${nextRankName} (${requiredXP} ${xpName})**`
