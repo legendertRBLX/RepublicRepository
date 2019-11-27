@@ -109,7 +109,6 @@ bot.on('message', async message => {
 
     if (blurb1 === token || blurb2 === token){
       await message.member.addRole(verifiedRole);
-      await message.member.setNickname(`${firstCheck} | ${nicknames2}`);
       return message.author.send(`${welcomeMessage}`)
     }else{
       return message.channel.send(`Sorry ${message.author}, but I couldn't find the code on your blurb or status.`);
